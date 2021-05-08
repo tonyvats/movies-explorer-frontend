@@ -1,10 +1,10 @@
 import './Header.css';
-import logo from '../../images/logo.svg';
+import { Link } from 'react-router-dom';
 
 function Header({ isLoggedIn, children }) {
   return (
-    <header className={isLoggedIn ? "header__dark" : "header"}>
-      <img className="logo" src={logo} alt="Логотип сайта"></img>
+    <header className={isLoggedIn ? "header" : "header__dark"}>
+      <Link className="logo" to="/"></Link>
       {children}
     </header>
   );

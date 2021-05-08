@@ -1,0 +1,35 @@
+.more{
+  display: flex;
+  height: 166px;
+  justify-content: center;
+  background-color: #202020;
+}
+
+.more__button{
+  min-width: 320px;
+  height: 36px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2F2F2F;
+  font-family: Inter, 'Areal', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  margin-top: 50px;
+}
+
+.more__button:hover{
+  opacity: .8;
+}
+
+.more__button:active{
+  opacity: .6;
+}
+
+@media screen and (max-width: 420px){
+  .more__button {
+    min-width: 240px;
+  }
+}
