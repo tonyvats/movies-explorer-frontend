@@ -1,0 +1,20 @@
+.register {
+    background-color: #202020;
+    height: 100vh;
+    font-family: Inter, 'Areal', sans-serif;
+    font-style: normal;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: center;
+    padding: 70px 0 70px;
+    overflow: scroll;
+}
+
+@media screen and (max-width: 520px) {
+    
+    .register {
+        padding: 56px 30px 30px;
+    }
+
+}
