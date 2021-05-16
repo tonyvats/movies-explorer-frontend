@@ -1,9 +1,9 @@
 import "./LoadMore.css";
 
-function LoadMore() {
+function LoadMore(props) {
   return (
     <div className="more">
-      <button className="more__button">Ещё</button>
+      <button className="more__button" onClick={props.onLoadMoreClick}>Ещё</button>
     </div>
   );
 }

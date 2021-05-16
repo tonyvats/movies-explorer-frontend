@@ -1,14 +1,28 @@
 import MoviesCardList from "../MoviesCardList/MoviesCardList";
 import SearchForm from "../SearchForm/SearchForm";
-import { movies } from "../../utils/constants";
-import LoadMore from "../LoadMore/LoadMore";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
-function Movies() {
+function Movies(props) {
+  
   return (
     <>
-      <SearchForm />
-      <MoviesCardList movies={movies} />
-      <LoadMore />
+      <Header isLoggedIn={props.isLoggedIn} isMainPage={!props.isMainPage} />
+      <SearchForm
+        onSubmit={props.onSubmit}
+        onChange={props.onChange}
+        searchValue={props.searchValue}
+        handleCheck={props.handleCheck}
+      />
+      <MoviesCardList
+        isInSavedList={false}
+        movies={props.movies}
+        isLoading={props.isLoading}
+        searchError={props.searchError}
+        onSaveMovie={props.onSaveMovie}
+        isShortMovie={props.isShortMovie}
+      />
+      <Footer />
     </>
   );
 }

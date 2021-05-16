@@ -97,16 +97,16 @@
     margin-bottom: 16px;
 }
 
-.sign__button:disabled{
+.form__submit-button:disabled{
     background: #F8F8F8;
     color: #C2C2C2;
 }
 
-.sign__button:hover {
+.form__submit-button:hover {
     opacity: .8;
 }
 
-.sign__button:active {
+.form__submit-button:active {
     opacity: .6;
 }
 
