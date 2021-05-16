@@ -2,7 +2,8 @@
 
 const MOVIE_BASE_URL = "https://api.nomoreparties.co/beatfilm-movies";
 const IMAGE_BASE_URL = "https://api.nomoreparties.co";
-const BASE_URL = "http://localhost:3000";
+// const BASE_URL = "http://localhost:3000";
+// const REACT_APP_API_URL = "https://api.vatc.movies.nomoredomains.icu";
 
 // =============================================================
 
@@ -33,7 +34,7 @@ const NOT_FOUND_ERR = "Страница не найдена"
 export {
   MOVIE_BASE_URL,
   IMAGE_BASE_URL,
-  BASE_URL,
+  // BASE_URL,
   SHORT_MOVIE_DURATION,
   FOR_FIVE_COLUMNS,
   FOR_THREE_AND_FOUR_COLUMNS,

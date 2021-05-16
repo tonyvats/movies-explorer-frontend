@@ -1,4 +1,6 @@
-import { MOVIE_BASE_URL, BASE_URL, IMAGE_BASE_URL } from "./constants";
+import { MOVIE_BASE_URL, IMAGE_BASE_URL } from "./constants";
+
+export const BASE_URL = `${window.location.protocol}${process.env.REACT_APP_API_URL || '//localhost:3000'}`;
 
 const checkResponse = (response) => response.ok
   ? response.json()

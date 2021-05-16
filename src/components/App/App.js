@@ -87,6 +87,7 @@ function App() {
     register(data.username, data.email, data.password)
       .then(() => {
         handleLogin(data);
+        setCurrentUser(data.username)
       })
       .catch((err) => {
         console.log(`Ошибка ${err}`);
@@ -102,6 +103,7 @@ function App() {
         .then((res) => {
             if (res.token) {
                 setLoggedIn(true);
+                setCurrentUser(data.username);
                 localStorage.setItem('jwt', res.token);
             }
         })
