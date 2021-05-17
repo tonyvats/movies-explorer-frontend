@@ -41,7 +41,7 @@ function App() {
 
   const { handleChange, errors, values, isValid } = Validation();
   
-  const storedMovies = JSON.parse(localStorage.getItem("foundedMovie"));
+  const storedMovies = JSON.parse(localStorage.getItem("storedMovies"));
   const savedMoviesInStore = JSON.parse(localStorage.getItem("savedMovies"));
 
   const [currentUser, setCurrentUser] = React.useState({});
@@ -139,6 +139,7 @@ function App() {
     localStorage.removeItem("jwt");
     localStorage.removeItem("savedMovies");
     localStorage.removeItem("foundedMovies");
+    localStorage.removeItem("storedMovies");
     setLoggedIn(false);
     history.push("/");
   }
@@ -162,6 +163,7 @@ function App() {
       if (foundedData.length === 0) {
         reject(EMPTY_RES);
       }
+      localStorage.setItem("storedMovies", JSON.stringify(foundedData));
       setMovies(foundedData);
       resolve();
     });
