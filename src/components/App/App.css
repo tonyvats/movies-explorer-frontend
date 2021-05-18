@@ -16,5 +16,10 @@
 }
 
 #root {
-  background-color: #F9F9F9;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-items: center;
 }

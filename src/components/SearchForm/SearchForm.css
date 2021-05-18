@@ -29,11 +29,12 @@
     border-radius: 8px;
     background-color: #202020;
     padding-left: 25px;
+    color: #ffffff;
 }
   
 .search-form__input:focus {
     outline: none;
-    border-bottom: 1px solid #ffffff;
+    border: 1px solid #ffffff;
 }
   
 .search-form__submit-button {
